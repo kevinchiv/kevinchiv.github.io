@@ -19,11 +19,20 @@ $(document).ready(function() {
   $(".gallery-item").click(function() {
     const index = $(".gallery-item").index(this);
     //const item = $(".gallery-item").get(index);
+    console.log(rotated[index]);
     if (rotated[index] == false) {
       rotated[index] = true;
       $(this).find("img").css({'transform' : 'rotateY('+ 180 +'deg)'});  
       $(this).find("img").css('opacity', '0');
       $(this).find("#recipe-button").css('display', 'flex');
+      $(this).css('cursor', 'default');
+    }
+
+    else {
+      rotated[index] = false;
+      $(this).find("img").css({'transform' : 'rotateY('+ 0 +'deg)'});  
+      $(this).find("img").css('opacity', '1');
+      $(this).find("#recipe-button").css('display', 'none');
       $(this).css('cursor', 'default');
     }
   });
