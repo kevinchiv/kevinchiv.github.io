@@ -1,0 +1,67 @@
+/*make section-item disappear*/
+#definition {
+	margin-top: 13vh;
+}
+
+.none {
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+
+#carousel-container {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: calc(100vh + 65%);
+	left: 73.5%;
+	z-index: 3;
+	background-color: grey;
+	/* YOUR CODE HERE */
+	height: 30vw;
+	width: 30vw;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 15px 15px 30px 3px #C5C5C5;
+}
+
+#carousel-strip {
+	transition: 0.4s;
+	display: flex;
+	flex-direction: row;
+	left: 0px;
+	position: absolute;
+}
+
+
+.carousel-section {
+	height: 30vw;
+	width: 30vw;
+	position: relative;
+}
+
+.carousel-section img {
+	width: 30vw;
+}
+
+/* Don't touch the code below !! */
+#left, #right {
+	position: absolute;
+	top: calc(100vh + 65%);
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 4;
+	padding: 20px;
+	font-size: 48px;
+	color: #FFFFFF;
+}
+
+#left {
+	left: 56.5vw;
+}
+
+#right {
+	left: 85vw;
+}
+
+#left:hover, #right:hover {
+	opacity: 0.8;
+}
