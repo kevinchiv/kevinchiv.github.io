@@ -19,7 +19,7 @@ $(document).ready(function() {
   $(".gallery-item").click(function() {
     const index = $(".gallery-item").index(this);
     //const item = $(".gallery-item").get(index);
-    console.log(rotated[index]);
+    // console.log(rotated[index]);
     if (rotated[index] == false) {
       rotated[index] = true;
       $(this).find("img").css({'transform' : 'rotateY('+ 180 +'deg)'});  
