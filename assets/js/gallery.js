@@ -22,18 +22,23 @@ $(document).ready(function() {
     // console.log(rotated[index]);
     if (rotated[index] == false) {
       rotated[index] = true;
-      $(this).find("img").css({'transform' : 'rotateY('+ 180 +'deg)'});  
+      $(this).css({'transform' : 'rotateY('+ 180 +'deg)'}); 
       $(this).find("img").css('opacity', '0');
+      $(this).find("#recipe-button").css({'transform' : 'rotateY('+ 180 +'deg)'});
+      $(this).find("p").css({'transform' : 'rotateY('+ 180 +'deg)'});  
       $(this).find("#recipe-button").css('display', 'flex');
       $(this).css('cursor', 'default');
+      $(this).css('box-shadow', '-10px 20px 25px 5px #C5C5C5')
     }
 
     else {
       rotated[index] = false;
-      $(this).find("img").css({'transform' : 'rotateY('+ 0 +'deg)'});  
+      $(this).css({'transform' : 'rotateY('+ 0 +'deg)'}); 
       $(this).find("img").css('opacity', '1');
+      $(this).find("p").css({'transform' : 'rotateY('+ 0 +'deg)'});  
       $(this).find("#recipe-button").css('display', 'none');
       $(this).css('cursor', 'default');
+      $(this).css('box-shadow', '10px 20px 25px 5px #C5C5C5')
     }
   });
 });
