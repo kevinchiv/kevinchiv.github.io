@@ -31,14 +31,14 @@
 
 .gallery-item {
 	width: 10vw;
-	height: 15vw;
+	height: 17.5vw;
 	float: left;
 	box-sizing: content-box;
 	width: 15vw;
 	background-color: #fff;
-	margin: 0 2.5vw 7.5vw 2.5vw;
+	margin: 0 2.5vw 5vw 2.5vw;
 	padding: 0;
-	border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 10px 10px;
 	box-shadow: 10px 20px 25px 5px #C5C5C5;
 	display: flex;
 	flex-direction: column;
@@ -54,6 +54,7 @@
 	color: #fff;
 	box-sizing: content-box;
 	width: 100%;
+	heigth: 100%;
 	text-align: center;
 	font: karla;
 	font-size: 20px;
@@ -67,6 +68,17 @@
 	padding: 0;
 	margin: 0;
 	border-radius: 10px 10px 0 0;
+	transition: 0s;
+}
+
+.gallery-item > #white-space {
+	transition: 0.5s;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-radius: 10px 10px 0 0;
+	transition: 0s;
+	height: 15vw;
 }
 
 .gallery-item:hover {
