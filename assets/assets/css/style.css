@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+html, body {
+ 	height: 100%;
+ 	margin: 0;
+  	padding: 0;
+  	font-family: Karla;
+  	scroll-behavior: smooth;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fc8d1f;
+  z-index: 5;
+  box-shadow: 15px 0px 50px 2px #C5C5C5;
+}
+
+
+#logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#logo img {
+  width: 40px;
+  padding: 10px;
+  margin: 0;
+}
+
+#logo div {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+
+section {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	margin-bottom: 5vh;
+}
+
+.section-title{
+	font-size: calc(40px/50vw);
+	color: #FFFFFF;
+	margin: 0;
+	box-sizing: content-box;
+	width: 100%;
+	height: 10%;
+	position: static;
+	padding-top: 5%;
+	display: block;
+	text-align: center;
+	background-color: #fc8d1f;
+	box-shadow: 10px 0px 50px 2px #C5C5C5;
+	border-radius: 10px 10px 0px 0px;
+	text-transform: uppercase;
+}
+
+.text-box {
+	height: 100%;
+	width: 100%;
+}
+
+.section-container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+}
+
+
+.section-item {
+	height: 80vh;
+	width: 40vw;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 10px 20px 50px 5px #C5C5C5;
+}
+
+
+.text {
+	display: block;
+	width: 30vw;
+	height: 55vh;
+	overflow: auto;	
+	position: static;
+	color: black;
+	margin: 0;
+	/*top: 10vh;*/
+	padding: 2.5vw 5vw 2.5vw 5vw;
+	border-radius: 0px 0px 0px 10px;
+}
+
+.left {
+	margin-left: 3vw;
+}
+
+.right {
+	margin-right: 3vw;
+}
+
+p {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 2; 
+	font-size: 20px;
+	text-align: justify;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+
+#home-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#home-page > div{
+	font-size: 80px;
+	padding: 40px 10px 40px 10px;
+	margin: 0;
+	position: static;
+	transform: translateY(10%);
+}
+
+#title {
+	color: #fc8d1f;
+	font-weight: bold;
+	font-size: 160px;
+}
+
+
+#type-it {
+	position: absolute;
+	color: #fc8d1f;
+	/*color: #ffffff;*/
+	top: 52.5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 100px;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+
+.section-container > #top {
+	position: absolute;
+	top: 32.5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	white-space: nowrap;
+	font-size: 75px;
+	color: #ffffff;
+}
+
+.section-container > #bottom {
+	position: absolute;
+	top: 72.5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 75px;
+	color: #ffffff;
+}
+
+#home-page {
+	 background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.5)),
+      url("../img/banner.jpg");
+      height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#credits {
+	margin: 0;
+	margin-top: 10vw;
+	padding: 5px;
+	width: 100%;
+	/*height: 7vh;*/
+	background: #fc8d1f;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: static;
+	transform: translateY(50vw);
+}
+
+@media screen and (max-width: 1440px) {
+	#credits {
+		transform: translateY(37.5vw);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#credits {
+		transform: translateY(27.5vw);
+	}
+}
+
+
+#credits > p{
+	text-align: center;
+	color: #FFFFFF;
+	font: karla;
+	padding: 5px 20px 5px 20px;
+  	color: #FFFFFF;
+  	font-size: 20px;
+  	font-weight: bold;
+}
