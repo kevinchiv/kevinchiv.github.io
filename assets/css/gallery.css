@@ -47,6 +47,7 @@
 	opacity: 0;
 	transition: 0.2s;
 	transition-timing-function: ease-out;
+	cursor: pointer;
 }
 
 .gallery-item > p{
