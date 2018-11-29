@@ -102,6 +102,19 @@
 	justify-content: center;
 }
 
+@media screen and (max-width: 1440px) {
+    #recipe-button {
+    	top: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #recipe-button {
+    	top: 20%;
+    }
+}
+
+
 #recipe-button > a {
 	font-size: 20px;
 	font-weight: bold;
